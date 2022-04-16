@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "847341724453",
+    "project_id": "trashlocator-49381",
+    "storage_bucket": "trashlocator-49381.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847341724453:android:4acb7c375a46cad46db0cc",
+        "android_client_info": {
+          "package_name": "com.trashlocator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847341724453-3s5p0nhe4rptqd3m4u0srt2fba2uuu24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_-T28789TVpuVjHYQPAeMEhe1a3yr0DM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847341724453-3s5p0nhe4rptqd3m4u0srt2fba2uuu24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

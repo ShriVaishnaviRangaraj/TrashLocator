@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trashlocator">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/trashlocator_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/trashlocator_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Trashlocator">
+        <activity android:name=".ui.picsview.UploadedPics"></activity>
+        <activity android:name=".ui.Uploaded" />
+        <activity
+            android:name=".ui.MainDashboard"
+            android:label="@string/title_activity_main_dashboard"
+            android:theme="@style/Theme.Trashlocator.NoActionBar" />
+        <activity android:name=".ui.Auth.signin.SignInVerification" />
+        <activity android:name=".ui.Auth.signin.ExistingUserSignIn" />
+        <activity android:name=".ui.Auth.signup.UserVerification" />
+        <activity android:name=".ui.Auth.signup.SignUp" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.trashlocator.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+
+</manifest>
